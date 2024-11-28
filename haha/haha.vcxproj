@@ -24,6 +24,7 @@
     <ProjectGuid>{61b8ee24-a6f7-4347-8e3d-ceaf51008816}</ProjectGuid>
     <RootNamespace>haha</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>practicals</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -196,8 +197,6 @@
     </ClCompile>
     <ClCompile Include="practical41.cpp" />
     <ClCompile Include="practical46.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="tutorial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
