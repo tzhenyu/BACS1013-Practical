@@ -123,5 +123,8 @@
     <ClCompile Include="practical4b13.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="practical4b8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

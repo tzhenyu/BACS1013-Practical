@@ -1,42 +1,41 @@
 #include <iostream>
-#include <iomanip>
 
-using namespace std;
+using namespace std; 
 
 int main() {
-	int upperNum, lowerNum;
-	int powerBy2, sumSquare = 0;
-	int i = 1;
-	cout << "Enter lower and upper integer limits: ";
-	cin >> lowerNum >> upperNum;
+	int lowerLimit, upperLimit;
+	int sum = 0;
+	int squares;
 
-	do {
+	cout << "Enter lower and upper integer limits >";
+	cin >> lowerLimit >> upperLimit;
+	for (int i = lowerLimit; i <= upperLimit; i++) {
+		squares = i * i;
+		sum += squares;
+	}
+	cout << "The sums of the squares from " << lowerLimit << " to " << upperLimit << " is " << sum << endl;
 
-		powerBy2 = i * i;
-		sumSquare += powerBy2;
-		break;
-
-	} while (lowerNum != upperNum || upperNum < lowerNum);
-
-
-
-	//do {
-	//	cout << "Enter the next limits: ";
-	//	cin >> lowerNum >> upperNum;
-
-	//	if ((lowerNum == upperNum) || (upperNum < lowerNum)) {
-	//		cout << "Ended";
-	//		break;
-	//	}
-	//	else {
-	//		powerBy2 = i * i;
-	//		sumSquare += powerBy2;
-	//	}
-
-	//} while (i <= upperNum);
+	while (true) {
 
 
+		sum = 0;
+		cout << "\nEnter next set of limits >";
+		cin >> lowerLimit >> upperLimit;
 
-	cout << "The sums of the squares from " << lowerNum << " to " << upperNum << " is " << sumSquare;
+		if (lowerLimit == upperLimit) {
+			cout << "Ended" << endl;
+			break;
+		}
+		else {
+			for (int i = lowerLimit; i <= upperLimit; i++) {
+				squares = i * i;
+				sum += squares;
+			}
+		}
+		cout << "The sums of the squares from " << lowerLimit << " to " << upperLimit << " is " << sum << endl;
+
+		
+	}
+	
 	return 0;
 }
