@@ -126,5 +126,14 @@
     <ClCompile Include="practical4b8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="practical4b11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="practical45.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="practicalExercise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,18 +1,30 @@
 #include <iostream>
-#include <iomanip>
 
 using namespace std;
 
 int main() {
 
-	int num; 
-	int smallest;
-	do {
+	int num, num1;
+	int smallest; 
+	int counter = 0; 
+	cout << "Enter nums >";
+	while (true) {
+		
+		cin >> num;  
+		smallest = num; 
 
-	} while (num != -999);
+		if (smallest == num) {
+			counter++;
+		}
 
-	cout << "The smallest value is " << smallest << " and it was entered" << " - " << " time(s)";
+		if (num == -999) {
+			break;
+		}
+	
 
+	}
+
+	cout << "The smallest value is " << smallest << " and it was entered " << counter << " time(s).";
 
 	return 0;
 }
