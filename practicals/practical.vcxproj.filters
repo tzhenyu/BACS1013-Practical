@@ -135,5 +135,11 @@
     <ClCompile Include="practicalExercise.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="practicalExercise2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testtest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

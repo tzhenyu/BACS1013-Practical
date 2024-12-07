@@ -32,11 +32,11 @@ int main() {
 		cout << "\nApplicant " << applicant << endl;
 		cout << setw(15) << setfill('-') << '-' << endl;
 		cout << setfill(' ');
-		cout << setw(30) << left << "Name:" << right << name << endl;
-		cout << setw(30) << left << "Vehicle No:" << right << carPlate << endl;
-		cout << setw(30) << left << "Vehicle Type:" << right << carType << endl;
-		cout << setw(30) << left << "Financing Term (Years):" << right << financeYear << endl;
-		cout << setw(30) << left << "Loan (RM):" << right << loan << endl;
+		cout << setw(23) << left << "Name:" << right << setw(10) << name << endl;
+		cout << setw(23) << left << "Vehicle No:" << setw(10) << right << carPlate << endl;
+		cout << setw(23) << left << "Vehicle Type:" << setw(10) << right << carType << endl;
+		cout << setw(23) << left << "Financing Term (Years):" << setw(10) << right << financeYear << endl;
+		cout << setw(23) << left << "Loan (RM):" << setw(10) << right << loan << endl;
 
 		loanSum += loan;
 
@@ -49,7 +49,7 @@ int main() {
 		case 'Y': applicant++; break;
 		case 'N': cout << "\n\nSummary \n" << setw(12) << setfill('-') << '-' << setfill(' ') 
 					   << setw(22) << left << "\nNumber of applicants:" << setw(10) << right << applicant 
-					   << setw(22) << left << "\nTotal Loan (RM): " << setw(10) << setfill('*') << right << loanSum; break;
+					   << setw(22) << left << "\nTotal Loan (RM): " << right << setw(10) << setfill('*') << loanSum; break;
 
 		}
 
